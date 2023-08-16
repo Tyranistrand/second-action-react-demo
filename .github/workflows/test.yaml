@@ -10,10 +10,5 @@ jobs:
               run: npm ci
             - name: Run tests
               run: npm test
-            - name: Upload Artifacts
-              uses: actions/upload-artifact@v3
-              with: 
-                name: build-artifact
-                path: ${{github.workspace}}
             
 
